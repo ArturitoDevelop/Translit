@@ -1,0 +1,154 @@
+body {
+  background-color: #ffffff;
+  font-family: IBM Plex Mono;
+  font-style: normal;
+  margin: 0;
+}
+
+.form {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+input,
+button {
+  border: none;
+  border-radius: 4px;
+  margin: 5px 0;
+  display: inline-block;
+  font-size: 18px;
+  line-height: 20px;
+  font-family: IBM Plex Mono;
+}
+#add {
+  background-color: #000000;
+  position: absolute;
+  top: 46%;
+  right: 36%;
+  transform: translateY(-50%);
+  padding: 0px 12px 5px 12px;
+  gap: 10px;
+  border: none;
+  cursor: pointer;
+  font-family: IBM Plex Mono;
+  color: var(--textmain-inverse, #fff);
+  font-size: 18px;
+  line-height: normal;
+  letter-spacing: -0.54px;
+  border-radius: 8px;
+  width: 104px;
+  height: 38px;
+}
+div {
+  color: white;
+}
+.index {
+  padding-right: 15px;
+  display: block;
+}
+.full {
+  display: none;
+  position: absolute;
+  color: #000000;
+  z-index: 1;
+  transform: translateY(-20px);
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 4px 14px 0px rgba(0, 0, 0, 0.1);
+  padding: 8px 16px 10px 16px;
+}
+
+.nameApp {
+  color: var(--main-purple, #4520ab);
+  text-align: center;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -3.2px;
+}
+
+input {
+  border-radius: 14px;
+  border: 2px solid var(--bg-black, #111);
+  width: 500px;
+  height: 56px;
+  padding-left: 20px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.container {
+  border-radius: 8px 8px 0px 0px;
+  background: #f0f0f0;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  justify-items: start;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+
+#delete {
+  display: flex;
+  padding: 6px 10px 8px 10px;
+  align-content: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #adadad;
+}
+
+.btnDel {
+  display: flex;
+  padding: 6px 10px 8px 10px;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  background: #adadad;
+  margin: auto;
+}
+
+.russian {
+  color: #111;
+  display: flex;
+  justify-content: flex-start;
+  padding: 10px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-right: 1px solid rgb(0, 0, 0);
+  width: 230px;
+  height: 22px;
+}
+
+.translit {
+  display: flex;
+  color: #111;
+  padding: 10px;
+  border-bottom: 2px solid rgb(0, 0, 0);
+  border-left: 1px solid rgb(0, 0, 0);
+  width: 230px;
+  background-color: #7e7d7d;
+  border-radius: 0px 8px 0px 0px;
+  height: 22px;
+}
+
+.deleteButton {
+  display: block;
+  position: absolute;
+  left: 61%;
+  background-color: #7e7d7d;
+  padding: 0;
+  width: 20px;
+  height: 20px;
+}
+
+@media (max-width: 480px) {
+  .nameApp {
+    color: #000000;
+  }
+}
